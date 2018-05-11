@@ -1,0 +1,92 @@
+/* ======================================================================= 
+	Main CSS File
+======================================================================= */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	background-color: #003366;
+	text-align: center;
+}
+
+.top-section {
+	height: 100vh;
+}
+
+.section {
+	padding-top: 40px;
+	padding-bottom: 60px;
+	box-shadow: 10px 10px;
+}
+.bottom-section {
+	height: 200px;
+}
+
+.title {
+	font-size: 46px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 40vh;
+}
+
+.subtitle {
+	font-size: 24px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 8px;
+}
+
+.heading {
+	font-size: 44px;
+	font-weight: bold;
+}
+
+.subheading {
+	font-size: 30px;
+}
+
+.infotext {
+	font-size: 20px;
+	text-align: left;
+}
+
+.row {
+	height: 300px;
+	padding: 0;
+	margin: 0;
+}
+
+.block-text-left {
+	height: 300px;
+	width: 700px;
+	padding: 10px;
+	display: inline-block;
+	float: left;
+}
+
+.block-left {
+	height: 300px;
+	width: 400px;
+	padding: 10px;
+	display: inline-block;
+	float: left;
+}
+
+
+.block-text-right {
+	height: 300px;
+	width: 700px;
+	padding: 10px;
+	display: inline-block;
+	float: right;
+}
+.block-right {
+	height: 300px;
+	width: 400px;
+	padding: 10px;
+	display: inline-block;
+	float: right;
+}
