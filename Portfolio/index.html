@@ -1,6 +1,8 @@
 <html>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <body>
@@ -21,8 +23,20 @@
 <div class="bottom-section-fade"></div>
 
 <div class="section-light">
-<div class="heading">Skills</div>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="heading">Skills</div><br><br>
+	<div class="row">
+		<div class="block"><br><img width="120px" height="120px" src="images/web.png"><br><br><br>
+		<div class="textsmall">Web Development</div>
+		</div><div class="block"><br><img width="120px" height="120px" src="images/code.png"><br><br><br>
+		<div class="textsmall">Programming</div>
+		</div><div class="block"><br><img width="120px" height="120px" src="images/db.png"><br><br><br>
+		<div class="textsmall">Databases</div>
+		</div><div class="block"><br><img width="120px" height="120px" src="images/ui.png"><br><br><br>
+		<div class="textsmall">UI Design</div>
+		</div><div class="block"><br><img width="120px" height="120px" src="images/cpu.png"><br><br><br>
+		<div class="textsmall">Hardware</div>
+		</div>
+	</div>
 </div>
 
 <div class="top-section-fade"></div>
@@ -85,22 +99,51 @@
 <div class="bottom-section-fade"></div>
 
 <div class="section-light">
-<div class="heading">Links</div>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="heading">Links</div><br><br>
+	<div class="row">
+		<div class="block"><br><img width="120px" height="120px" src="images/twitter.png"><br><br><br>
+		<a target="_blank" href="http://twitter.com/DanWoolford_" class="btn btn-lg btn-primary">Twitter</a>
+		</div><div class="block"><br><img width="120px" height="120px" src="images/instagram.png"><br><br><br>
+		<a target="_blank" href="http://instagram.com/danwoolford_" class="btn btn-lg btn-primary">Instagram</a>
+		</div><div class="block"><br><img width="120px" height="120px" src="images/github.png"><br><br><br>
+		<a target="_blank" href="http://github.com/AvidPenguin" class="btn btn-lg btn-primary">GitHub</a>
+		</div>
+	</div>
 </div>
 
 <div class="top-section-fade"></div>
 
 <div class="section-dark">
-<div class="heading">Contact Me</div>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="heading">Contact Me [WIP]</div><br><br><br>
+
+<div class="center">
+		<form>
+			<div class="textsmall">First Name</div><br>
+			<input type="text" class="form-control input-lg transparent-input" id="firstname"><br>
+			<div class="textsmall">Last Name</div><br>
+			<input type="text" class="form-control input-lg transparent-input" id="lastname"><br>
+			<div class="textsmall">Email Address</div><br>
+			<input type="email" class="form-control input-lg transparent-input" id="email"><br>
+			<div class="textsmall">Message</div><br>
+			<textarea class="form-control input-lg transparent-input" rows="6" id="message"></textarea>
+			<br><br>
+			<input type="submit" class="btn btn-primary btn-lg btn-send" value="Submit">
+	  </form>
+	  <br><br>
+</div>
 </div>
 
 <div class="bottom-section-fade"></div><div class="subtitle"></div>
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br>
 <div class="subtitle">© Dan Woolford  2018</div>
 <br><br>
 
 </body>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
 </html>

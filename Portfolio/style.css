@@ -43,6 +43,16 @@ body {
 	height: 100px;
 }
 
+input.transparent-input{
+   background-color:rgba(0,0,0,0) !important;
+   color: white;
+}
+
+textarea.transparent-input{
+   background-color:rgba(0,0,0,0) !important;
+   color: white;
+}
+
 .title {
 	font-size: 46px;
 	font-weight: bold;
@@ -84,6 +94,25 @@ body {
 	height: 300px;
 	padding: 0;
 	margin: 0;
+}
+
+.center {
+	width: 800px;
+	padding: 0;
+	margin: auto;
+}
+
+.block{
+	top: 0px;
+	display: inline-block;
+	height: 250px;
+	width: 200px;
+	padding: 0;
+	margin: 0;
+}
+
+.progress {
+	display: inline-block;
 }
 
 .block-text-left {

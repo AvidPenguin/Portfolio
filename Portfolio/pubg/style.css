@@ -81,6 +81,10 @@ button {
 	background-color: #5a4c90;
 }
 
+.popover{
+    background: #002040;
+}
+
 .dropItemBlue{
 	top: 0px;
 	display: inline-block;
