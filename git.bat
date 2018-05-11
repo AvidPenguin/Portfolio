@@ -1,3 +1,3 @@
-call git add *
-call git commit -m "Second Commit"
-call git push -u origin master
+git add *
+git commit -m "Second Commit"
+git push -u origin master

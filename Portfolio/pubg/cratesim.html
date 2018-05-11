@@ -4,48 +4,242 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <body>
-
+<div class="header"></div>
+<div class="main">
 <div class="title">PUBG Crate Simulator</div>
+<div class="subtitle">Developed by Dan Woolford</div>
+
+<br><br>
 
 <div class="btn-group">
-  <button type="button" id="btnTriumph" onclick="changeCrate('triumph')" class="btn btn-primary">Triumph</button>
-  <button type="button" id="btnRaider" onclick="changeCrate('raider')" class="btn">Raider</button>
-  <button type="button" id="btnEquinox" onclick="changeCrate('equinox')" class="btn">Equinox</button>
-  <button type="button" id="btnFever" onclick="changeCrate('fever')" class="btn">Fever</button>
+  <button id="btnTriumph" onclick="changeCrate('triumph')" class="btn btn-primary">Triumph</button>
+  <button id="btnRaider" onclick="changeCrate('raider')" class="btn">Raider</button>
+  <button id="btnEquinox" onclick="changeCrate('equinox')" class="btn">Equinox</button>
+  <button id="btnFever" onclick="changeCrate('fever')" class="btn">Fever</button>
+  <button id="btnMilitia" onclick="changeCrate('militia')" class="btn">Militia</button>
+  <button id="btnDesperado" onclick="changeCrate('desperado')" class="btn">Desperado</button>
+  <button id="btnBiker" onclick="changeCrate('biker')" class="btn">Biker</button>
 </div>
 
-<div id="divTriumph" style="display: block">
+<div id="divTriumph" style="display: block"><br>
 	<img src="images/triumph/crate.png" width="200px" height="200px">
-	<br>
-	<button type="button" id="btnOpenTriumph" onclick="openCrate('triumph')" class="btn btn-primary">Open Triumph Crate</button>
-
+	<br><br>
+	<button id="btnOpenTriumph" onclick="openCrate('triumph')" class="btn btn-lg btn-primary">Open Triumph Crate</button>
+	<br><br><br>
+	<div class="subtitle">Drop Chances:</div><br>
+	<div class="drops">
+		<div class="dropItemRed"><img width="100px" height="100px" src="images/triumph/akm_glory.png"> 0.16%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/ump9_glory.png">0.32%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/s12k_gold_plate.png">0.32%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/sks_gold_plate.png">0.6%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/m416_desert_digital.png">1.3%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/scar-l_trifecta.png">1.3%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/kar98k_desert_digital.png">2.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/mini14_desert_digital.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/micro_uzi_trifecta.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/sawed-off_gold_plate.png">4.5%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/win94_gold_plate.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/p92_trifecta.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/m416_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/akm_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/kar98k_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/scar-l_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/ump9_rugged_orange.png">15.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/r45_desert_digital.png">15.0%
+		</div>
+	</div>
 </div>
 
-<div id="divRaider" style="display: none">
+<div id="divRaider" style="display: none"><br>
 	<img src="images/raider/crate.png" width="200px" height="200px">
-	<br>
-	<button type="button" id="btnOpenRaider" onclick="openCrate('raider')" class="btn btn-primary">Open Raider Crate</button>
-
+	<br><br>
+	<button id="btnOpenRaider" onclick="openCrate('raider')" class="btn btn-lg btn-primary">Open Raider Crate</button>
+	<br><br><br>
+	<div class="subtitle">Drop Chances:</div><br>
+	<div class="drops">
+		<div class="dropItemRed"><img width="100px" height="100px" src="images/raider/s686_gold_plate.png"> 0.0064%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/raider/kar98k_turquoise_delight.png">0.0128%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/raider/m16a4_turquoise_delight.png">0.0128%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/raider/tommy_gun_turquoise_delight.png">0.028%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/raider/scar-l_silver_plate.png">0.05%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/raider/awm_jungle_digital.png">0.05%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/raider/p1911_turquoise_delight.png">0.08%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/raider/sks_jungle_digital.png">0.28%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/raider/vector_silver_plate.png">0.28%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/raider/s1897_silver_plate.png">0.4%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/raider/dp-28_silver_plate.png">1.4%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/raider/p18c_jungle_digital.png">1.4%
+		</div><div class="dropItemGray"><img width="100px" height="100px" src="images/raider/r1895_silver_plate.png">3.0%
+		</div><div class="dropItemGray"><img width="100px" height="100px" src="images/raider/kar98k_rugged_beige.png">6.5%
+		</div><div class="dropItemGray"><img width="100px" height="100px" src="images/raider/s12k_rugged_beige.png">6.5%
+		</div><div class="dropItemBlack"><img width="100px" height="100px" src="images/raider/m16a4_rugged_beige.png">20.0%
+		</div><div class="dropItemBlack"><img width="100px" height="100px" src="images/raider/s686_rugged_beige.png">20.0%
+		</div><div class="dropItemBlack"><img width="100px" height="100px" src="images/raider/crossbow_rugged_beige.png">20.0%
+		</div><div class="dropItemBlack"><img width="100px" height="100px" src="images/raider/sks_rugged_beige.png">20.0%
+		</div>
+	</div>
 </div>
 
-<div id="divEquinox" style="display: none">
+<div id="divEquinox" style="display: none"><br>
 	<img src="images/equinox/crate.png" width="200px" height="200px">
-	<br>
-	<button type="button" id="btnOpenEquinox" onclick="openCrate('equinox')" class="btn btn-primary">Open Equinox Crate</button>
+	<br><br>
+	<button id="btnOpenEquinox" onclick="openCrate('equinox')" class="btn btn-lg btn-primary">Open Equinox Crate</button>
+	<br><br><br>
+	<div class="subtitle">Drop Chances:</div><br>
+	<div class="drops">
+		<div class="dropItemRed"><img width="100px" height="100px" src="images/triumph/akm_glory.png"> 0.16%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/ump9_glory.png">0.32%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/s12k_gold_plate.png">0.32%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/sks_gold_plate.png">0.6%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/m416_desert_digital.png">1.3%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/scar-l_trifecta.png">1.3%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/kar98k_desert_digital.png">2.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/mini14_desert_digital.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/micro_uzi_trifecta.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/sawed-off_gold_plate.png">4.5%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/win94_gold_plate.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/p92_trifecta.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/m416_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/akm_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/kar98k_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/scar-l_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/ump9_rugged_orange.png">15.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/r45_desert_digital.png">15.0%
+		</div>
+	</div>
+</div>
 
+<div id="divFever" style="display: none"><br>
+	<img src="images/fever/crate.png" width="200px" height="200px">
+	<br><br>
+	<button id="btnOpenFever" onclick="openCrate('fever')" class="btn btn-lg btn-primary">Open Fever Crate</button>
+	<br><br><br>
+	<div class="subtitle">Drop Chances:</div><br>
+	<div class="drops">
+		<div class="dropItemRed"><img width="100px" height="100px" src="images/triumph/akm_glory.png"> 0.16%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/ump9_glory.png">0.32%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/s12k_gold_plate.png">0.32%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/sks_gold_plate.png">0.6%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/m416_desert_digital.png">1.3%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/scar-l_trifecta.png">1.3%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/kar98k_desert_digital.png">2.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/mini14_desert_digital.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/micro_uzi_trifecta.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/sawed-off_gold_plate.png">4.5%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/win94_gold_plate.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/p92_trifecta.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/m416_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/akm_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/kar98k_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/scar-l_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/ump9_rugged_orange.png">15.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/r45_desert_digital.png">15.0%
+		</div>
+	</div>
 </div>
-<div id="divCrateReward" style="display:none">
-	
+
+<div id="divMilitia" style="display: none"><br>
+	<img src="images/militia/crate.png" width="200px" height="200px">
+	<br><br>
+	<button id="btnOpenMilitia" onclick="openCrate('militia')" class="btn btn-lg btn-primary">Open Militia Crate</button>
+	<br><br><br>
+	<div class="subtitle">Drop Chances:</div><br>
+	<div class="drops">
+		<div class="dropItemRed"><img width="100px" height="100px" src="images/triumph/akm_glory.png"> 0.16%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/ump9_glory.png">0.32%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/s12k_gold_plate.png">0.32%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/sks_gold_plate.png">0.6%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/m416_desert_digital.png">1.3%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/scar-l_trifecta.png">1.3%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/kar98k_desert_digital.png">2.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/mini14_desert_digital.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/micro_uzi_trifecta.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/sawed-off_gold_plate.png">4.5%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/win94_gold_plate.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/p92_trifecta.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/m416_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/akm_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/kar98k_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/scar-l_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/ump9_rugged_orange.png">15.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/r45_desert_digital.png">15.0%
+		</div>
+	</div>
 </div>
+
+<div id="divDesperado" style="display: none"><br>
+	<img src="images/desperado/crate.png" width="200px" height="200px">
+	<br><br>
+	<button id="btnOpenDesperado" onclick="openCrate('desperado')" class="btn btn-lg btn-primary">Open Desperado Crate</button>
+	<br><br><br>
+	<div class="subtitle">Drop Chances:</div><br>
+	<div class="drops">
+		<div class="dropItemRed"><img width="100px" height="100px" src="images/triumph/akm_glory.png"> 0.16%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/ump9_glory.png">0.32%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/s12k_gold_plate.png">0.32%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/sks_gold_plate.png">0.6%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/m416_desert_digital.png">1.3%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/scar-l_trifecta.png">1.3%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/kar98k_desert_digital.png">2.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/mini14_desert_digital.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/micro_uzi_trifecta.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/sawed-off_gold_plate.png">4.5%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/win94_gold_plate.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/p92_trifecta.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/m416_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/akm_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/kar98k_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/scar-l_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/ump9_rugged_orange.png">15.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/r45_desert_digital.png">15.0%
+		</div>
+	</div>
+</div>
+
+<div id="divBiker" style="display: none"><br>
+	<img src="images/biker/crate.png" width="200px" height="200px">
+	<br><br>
+	<button id="btnOpenBiker" onclick="openCrate('biker')" class="btn btn-lg btn-primary">Open Biker Crate</button>
+	<br><br><br>
+	<div class="subtitle">Drop Chances:</div><br>
+	<div class="drops">
+		<div class="dropItemRed"><img width="100px" height="100px" src="images/triumph/akm_glory.png"> 0.16%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/ump9_glory.png">0.32%
+		</div><div class="dropItemPink"><img width="100px" height="100px" src="images/triumph/s12k_gold_plate.png">0.32%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/sks_gold_plate.png">0.6%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/m416_desert_digital.png">1.3%
+		</div><div class="dropItemPurple"><img width="100px" height="100px" src="images/triumph/scar-l_trifecta.png">1.3%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/kar98k_desert_digital.png">2.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/mini14_desert_digital.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/micro_uzi_trifecta.png">4.5%
+		</div><div class="dropItemBlue"><img width="100px" height="100px" src="images/triumph/sawed-off_gold_plate.png">4.5%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/win94_gold_plate.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/p92_trifecta.png">5.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/m416_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/akm_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/kar98k_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/scar-l_rugged_orange.png">10.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/ump9_rugged_orange.png">15.0%
+		</div><div class="dropItemGreen"><img width="100px" height="100px" src="images/triumph/r45_desert_digital.png">15.0%
+		</div>
+	</div>
+</div>
+
+<!--  REST OF CRATES   -->
 
 <div id="divReward" class="popup">
 
-  <!-- Modal content -->
   <div class="popup-content">
+	<div id="rewardBackground">
     <img id="imgCrateReward" width="200px" height="200px">
+	</div><br>
 	<p id="pReceived"></p><p id="pReceivedInfo"></p>
+	<button onclick="closePopup()" class="btn btn-primary">Close</button>
   </div>
 
+</div>
+</div><div class="footer">
+	<a href="../index.html" class="btn btn-lg btn-primary">Go Back</a>
 </div>
 </body>
 <script src="script.js"></script>
